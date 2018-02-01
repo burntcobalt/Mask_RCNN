@@ -144,6 +144,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8))
     plt.show()
+    plt.savefig("%s.png"%title)
     
 
 def draw_rois(image, rois, refined_rois, mask, class_ids, class_names, limit=10):
